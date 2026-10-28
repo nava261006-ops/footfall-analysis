@@ -1,0 +1,20 @@
+{
+  "name": "bit-campus-footfall-analytics",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BIT Campus Footfall Analytics Monorepo (React Frontend + Node.js/Python Backends)",
+  "scripts": {
+    "dev": "npx --yes concurrently -n \"FRONTEND,NODE-BACKEND\" -c \"cyan.bold,magenta.bold\" \"npm.cmd --prefix frontend run dev\" \"npm.cmd --prefix backend run dev\"",
+    "dev:python": "npx --yes concurrently -n \"FRONTEND,FASTAPI\" -c \"cyan.bold,green.bold\" \"npm.cmd --prefix frontend run dev\" \"python backend-python/run.py\"",
+    "dev:frontend": "npm.cmd --prefix frontend run dev",
+    "dev:backend": "npm.cmd --prefix backend run dev",
+    "dev:backend:python": "python backend-python/run.py",
+    "install:all": "npm.cmd --prefix frontend install && npm.cmd --prefix backend install",
+    "build:frontend": "npm.cmd --prefix frontend run build",
+    "build:backend": "npm.cmd --prefix backend run build",
+    "build": "npm.cmd --prefix frontend run build && npm.cmd --prefix backend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

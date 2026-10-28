@@ -1,0 +1,16 @@
+{
+  "name": "bit-campus-footfall-analytics-root",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root forwarding wrapper for BIT Campus Footfall Analytics",
+  "scripts": {
+    "dev": "npm --prefix bit-campus-footfall-analytics run dev",
+    "dev:python": "npm --prefix bit-campus-footfall-analytics run dev:python",
+    "dev:frontend": "npm --prefix bit-campus-footfall-analytics run dev:frontend",
+    "dev:backend": "npm --prefix bit-campus-footfall-analytics run dev:backend",
+    "build": "npm --prefix bit-campus-footfall-analytics run build",
+    "build:frontend": "npm --prefix bit-campus-footfall-analytics run build:frontend",
+    "build:backend": "npm --prefix bit-campus-footfall-analytics run build:backend",
+    "install:all": "npm --prefix bit-campus-footfall-analytics run install:all"
+  }
+}
